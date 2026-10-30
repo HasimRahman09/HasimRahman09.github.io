@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hasim Rahman: AI and data engineer, Sydney</title>
+  <meta name="description" content="Hasim Rahman builds AI systems that are safe to put in front of customers: deterministic cores, evaluation gates and agents that orchestrate rather than decide.">
+  <meta property="og:title" content="Hasim Rahman: AI and data engineer">
+  <meta property="og:description" content="AI systems with deterministic cores, eval gates and agent orchestration. Sydney.">
+  <meta property="og:image" content="https://hasimrahman09.github.io/img/record-passport.png">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="mark" href="#">Hasim Rahman</a>
+      <nav aria-label="Sections">
+        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <p class="eyebrow">AI &amp; data engineer · Sydney</p>
+      <h1>I build AI systems you can put in front of a customer.</h1>
+      <p class="lede">
+        The model orchestrates and explains. The judgement lives in tested code, behind evaluation gates
+        that fail the build before a wrong answer reaches anyone. I do this day to day as a Data &amp;
+        Integration Engineer at CIM. On the side, I build tools for records, health data and public statistics.
+      </p>
+      <ul class="links" aria-label="Profiles">
+        <li><a href="https://github.com/HasimRahman09">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/hasim-rahman-7a9a721a4/">LinkedIn</a></li>
+        <li><a href="mailto:hasimrahman09@gmail.com">hasimrahman09@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h2 class="section-title">Projects</h2>
+
+      <article class="feature">
+        <a class="feature-img" href="https://record-check.vercel.app">
+          <img src="img/record-passport.png" width="1200" height="683"
+               alt="Record Passport showing a filed record with its passport: record, agent, business, process, review and integrity details, and a verified hash chain.">
+        </a>
+        <div class="feature-body">
+          <p class="badge">Finalist · RIMPA Global Hackathon 2026</p>
+          <h3>Record Passport</h3>
+          <p>
+            When an AI-assisted document becomes a government record, Record Passport works out what to trust
+            from the evidence, not from whether AI touched it. It looks up every citation and traces every
+            sentence to authoritative records. It then files a hash-chained record package, and recalls
+            everything a faulty model helped make.
+          </p>
+          <ul class="points">
+            <li>The engine enforces the rules, and the API re-derives every verdict instead of trusting its callers</li>
+            <li>The language model only splits text into claims, with a deterministic offline fallback</li>
+            <li>284 tests, with an edge-case register that a test keeps in sync with the code</li>
+          </ul>
+          <p class="stack">Python · FastAPI · Next.js · Postgres (Neon) · Vercel · Claude API</p>
+          <p class="actions">
+            <a class="btn" href="https://record-check.vercel.app">Live app</a>
+            <a class="btn ghost" href="https://github.com/HasimRahman09/record-passport">Code</a>
+          </p>
+        </div>
+      </article>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Data gap ranker</h3>
+          <p>
+            Which single missing UN Sustainable Development Goal (SDG) data series would unlock the most
+            country-to-country comparisons? It ranks gaps by what filling them would unlock, not by raw
+            missing counts. A cached, hash-logged copy of the data means CI never calls the live API.
+          </p>
+          <p class="stack">Python · Polars · UN SDG API</p>
+          <p class="actions"><a href="https://github.com/HasimRahman09/data-gap-ranker">Code →</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Australia labour market deep dive</h3>
+          <p>
+            An interactive look at unemployment, underemployment, wages against inflation, and a breakdown
+            by state and NSW suburb, built from Australian Bureau of Statistics (ABS) data.
+          </p>
+          <p class="stack">React · Vite · ABS data</p>
+          <p class="actions">
+            <a href="https://hasimrahman09.github.io/australia-labour-market/">Live site →</a>
+            <a href="https://github.com/HasimRahman09/australia-labour-market">Code →</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="wrap">
+      <h2 class="section-title">At work</h2>
+      <div class="work">
+        <div>
+          <h3>Agentic commissioning at CIM</h3>
+          <p>
+            Bringing a building onto CIM's analytics platform means matching thousands of vendor-specific
+            building-management point names to standard metadata. A wrong match is a missed fault or a billing dispute.
+            With a small team, I build the multi-agent system on the Claude API that runs this work. Supervisor agents drive a
+            deterministic Python core, pause at decision points for the engineer, and stop when a guardrail trips.
+            An evaluator replays golden fixtures so accuracy can't silently regress.
+          </p>
+          <p class="note">This is CIM's code, so the repository is private. I'm happy to walk through the architecture in an interview.</p>
+        </div>
+        <ul class="facts">
+          <li><strong>709</strong> fault-detection templates generated through a schema-first AI pipeline</li>
+          <li><strong>~70% → ~85%</strong> accuracy on a production language-model metadata classifier</li>
+          <li>dbt models on <strong>BigQuery</strong>, with Metabase and Tableau reporting on top</li>
+          <li>The team's primary <strong>AI capability</strong> resource</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Jul 2026 – now</span>
+          <div><h3>Data &amp; Integration Engineer · CIM</h3>
+          <p>Promoted after about thirteen months. AI agents, evaluation, dbt and the data-integration pipeline behind the platform.</p></div>
+        </li>
+        <li>
+          <span class="when">May 2025 – Jun 2026</span>
+          <div><h3>Data &amp; Integration Specialist · CIM</h3>
+          <p>Building commissioning tooling and integration pipelines for commercial buildings.</p></div>
+        </li>
+        <li>
+          <span class="when">Jun 2022 – Jan 2023</span>
+          <div><h3>Data Analyst · IINREM</h3>
+          <p>Tableau reporting on business-to-business (B2B) and business-to-consumer (B2C) transaction flows. Social-outcome and financial reporting for the Entrepreneurship for Empowerment project, contributing to 20% revenue growth.</p></div>
+        </li>
+        <li>
+          <span class="when">Nov 2021 – Apr 2022</span>
+          <div><h3>Data Consulting Intern · Grant Thornton Bharat</h3>
+          <p>Analysis and reporting on a $1M social response programme, supporting how its funds were allocated.</p></div>
+        </li>
+      </ol>
+
+      <div class="two">
+        <div>
+          <h3 class="minor">Education</h3>
+          <ul class="plain">
+            <li>Master of Business Analytics (Extension), UTS · distinction average · 2025</li>
+            <li>Bachelor of Economics (Honours), Jamia Millia Islamia · 2022</li>
+          </ul>
+          <h3 class="minor">Certifications</h3>
+          <ul class="plain">
+            <li>Microsoft Azure AI Fundamentals (AI-900)</li>
+            <li>Google Data Analytics Professional Certificate</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="minor">Tools</h3>
+          <ul class="tags">
+            <li>Python</li><li>Claude API</li><li>MCP</li><li>FastAPI</li><li>PostgreSQL</li>
+            <li>Polars</li><li>dbt</li><li>BigQuery</li><li>Streamlit</li><li>scikit-learn</li>
+            <li>Tableau</li><li>Metabase</li><li>Next.js</li><li>Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="foot">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p>I'm open to AI engineering, data science and analytics roles in Sydney.</p>
+      <p class="actions">
+        <a class="btn" href="mailto:hasimrahman09@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/hasim-rahman-7a9a721a4/">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/HasimRahman09">GitHub</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
