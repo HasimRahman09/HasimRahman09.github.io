@@ -29,7 +29,8 @@ main { max-width: 640px; margin: 0 auto; padding: 72px 20px 96px; }
 a { color: inherit; text-decoration-color: var(--muted); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { text-decoration-color: var(--ink); }
 
-header { margin-bottom: 32px; }
+header { margin-bottom: 32px; display: flex; align-items: center; gap: 20px; }
+.photo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; flex: none; }
 h1 { font-size: 30px; font-weight: 600; margin: 0; }
 .role { color: var(--muted); margin: 2px 0 0; }
 p { margin: 0 0 16px; }
